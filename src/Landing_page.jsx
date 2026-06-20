@@ -1,4 +1,4 @@
-import "./landing_page.css";
+import "./landing_page.css"
 
 import { useState, useEffect, useRef, useCallback } from "react";
 
@@ -39,16 +39,16 @@ function WhatsIcon({ size = 20 }) {
 function CheckIcon() {
   return (
     <svg
-      width={16}
-      height={16}
+      width={22}
+      height={22}
       viewBox="0 0 16 16"
       fill="none"
       aria-hidden="true"
     >
-      <circle cx="8" cy="8" r="8" fill="#C9912A" fillOpacity="0.18" />
+      <circle cx="8" cy="8" r="8" fill="#0ef686" fillOpacity="0.18" />
       <path
         d="M4.5 8.2L6.7 10.4L11.5 5.4"
-        stroke="#E8B958"
+        stroke="#07c26e"
         strokeWidth="1.6"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -127,15 +127,15 @@ export default function Landing_page() {
   const projects = [
     {
       key: "pizza",
-      image: typeof IMG_PIZZA !== "undefined" ? IMG_PIZZA : "",
-      sector: "مطاعم · ألمانيا",
+      image: typeof IMG_T2 !== "undefined" ? IMG_T2 : "",
+      sector: "مطعم · ألمانيا",
       title: "Angelo Della Pizza",
       desc: "موقع مطعم إيطالي — قائمة طعام تفاعلية وطلب مباشر من الجوال.",
       liveUrl: "https://angolodella-pizza.vercel.app/",
     },
     {
       key: "t2",
-      image: typeof IMG_T2 !== "undefined" ? IMG_T2 : "",
+      image: typeof IMG_PIZZA !== "undefined" ? IMG_PIZZA : "",
       sector: "قطع غيار سيارات · العراق",
       title: "T2 Accessories",
       desc: "متجر إلكتروني لقطع غيار واكسسوارات السيارات مع بحث وتصنيف للمنتجات.",
@@ -145,9 +145,9 @@ export default function Landing_page() {
       key: "store",
       image: typeof IMG_STORE !== "undefined" ? IMG_STORE : "",
       sector: "متاجر إلكترونية · أثاث وديكور",
-      title: "Enes Halil Store",
+      title: "Star Center",
       desc: "متجر أثاث ومنتجات منزلية بتصميم عصري يرفع نسبة الشراء.",
-      liveUrl: "https://enes-halil-store.vercel.app/",
+      liveUrl: "https://enes-mobilia.vercel.app/",
     },
   ];
 
@@ -212,7 +212,7 @@ export default function Landing_page() {
           <h2>عملك موجود — لكن لا أحد يجده أونلاين</h2>
           <div className="pain-row">
             <div className="pain-item">
-              <span className="pain-ic">😟</span>
+              <span className="pain-ic">✋</span>
               <p>عميلك يبحث عنك ولا يجدك، فيذهب لمنافسك مباشرة.</p>
             </div>
             <div className="pain-item">
@@ -231,7 +231,7 @@ export default function Landing_page() {
       <section className="work" ref={reg("work")} id="work">
         <div className={`reveal ${shown.work ? "in" : ""}`}>
           <p className="eyebrow">أعمال حقيقية · عملاء حقيقيون</p>
-          <h2>نتائج تتكلم عن نفسها</h2>
+          <h2><span className="admin">أخر ثلاث عملاء</span> نتائج تتكلم عن نفسها </h2>
         </div>
         <div className="proj-grid">
           {projects.map((p, i) => (

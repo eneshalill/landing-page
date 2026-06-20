@@ -1,12 +1,9 @@
-/* ============================================================
-   CSS — نفس الهوية الذهبية/الداكنة الأصلية، بدون أي تعقيد إضافي
-   ============================================================ */
 
 * {
   box-sizing: border-box;
 }
 .page {
-  font-family: "Tahoma", "Segoe UI", sans-serif;
+font-family: 'Tajawal', sans-serif;
   background: var(--ink);
   color: #fff;
   overflow-x: hidden;
@@ -227,6 +224,10 @@ a {
 }
 .proj-card:hover .proj-img-wrap img {
   transform: scale(1.05);
+}
+
+.admin{
+  color: red;
 }
 .live-pill {
   position: absolute;
