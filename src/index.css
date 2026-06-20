@@ -1,8 +1,27 @@
+/* ── TOKENS ── */
+:root {
+  --ink:      #070D1B;
+  --ink-2:    #0A1225;
+  --ink-3:    #0D1830;
+  --navy:     #0E1F3A;
+  --gold:     #BF8A28;
+  --gold-lt:  #F5C96A;
+  --gold-dim: rgba(191,138,40,.18);
+  --white:    #FFFFFF;
+  --mist:     #A8BCD8;
+  --slate:    #5A7090;
+  --radius:   14px;
+  --radius-lg:22px;
 
-  :root {
-    --ink: #0B1120;
-    --ink-2: #080F1E;
-    --gold: #C9912A;
-    --gold-lt: #F0C96B;
-    --radius: 14px;
-  }
+  /* type scale */
+  --fs-xs:   .72rem;
+  --fs-sm:   .85rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.15rem;
+  --fs-xl:   clamp(1.6rem, 4vw, 2.2rem);
+  --fs-2xl:  clamp(2rem, 6vw, 3.6rem);
+
+  /* shadows */
+  --glow-gold: 0 0 40px rgba(191,138,40,.22);
+  --glow-wa:   0 8px 34px rgba(37,211,102,.38);
+}
